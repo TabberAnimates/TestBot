@@ -1,0 +1,89 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <block type="s4d_login" id="9MW^nnqG,@~gSDlTHo{G" x="0" y="0">
+    <value name="TOKEN">
+      <block type="text" id="`FXF^r?nte#[OhmMDM7,">
+        <field name="TEXT">TheBotOfTabber</field>
+      </block>
+    </value>
+  </block>
+  <block type="s4d_on_member_join" id="tQ44whPQQg)D6cl4g40f" x="0" y="107">
+    <statement name="STATEMENTS">
+      <block type="s4d_add_role" id="9E,Rw0`oudE^L!YLZHWY">
+        <value name="ROLE">
+          <block type="text" id="6!QB=%*v/w:EnI=.LFU!">
+            <field name="TEXT">POV: You just joined</field>
+          </block>
+        </value>
+        <value name="MEMBER">
+          <block type="s4d_joining_member" id="9I!!*9Bw2;9e49Z)sKMp"></block>
+        </value>
+        <next>
+          <block type="s4d_send_channel" id="N%c38SC:.?QcuMJlQbS2">
+            <value name="CONTENT">
+              <block type="text_join" id="?(Um*79YeBAYr@_EUR;{">
+                <mutation items="3"></mutation>
+                <value name="ADD0">
+                  <block type="text" id="z+tE6X3aWI`bvx`fc0:(">
+                    <field name="TEXT">The user </field>
+                  </block>
+                </value>
+                <value name="ADD1">
+                  <block type="s4d_joining_guild" id="{L{mD(pC]ghFZ~7)fvcD"></block>
+                </value>
+                <value name="ADD2">
+                  <block type="text" id="WTim{fl)@qPmm^K[!Yn%">
+                    <field name="TEXT"> just joined. READ DE RULES OR ELSE!!!!</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="CHANNEL">
+              <block type="s4d_get_channel" id="pCJ(|[s1G*+cZ$b6v4%W">
+                <field name="SEARCH_TYPE">NAME</field>
+                <value name="VALUE">
+                  <block type="text" id="O_2%/{H~Km21GgjCWk#w">
+                    <field name="TEXT">welcome</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="s4d_on_member_leave" id="PdA~S}nqDSJ**g$C@`|+" x="0" y="567">
+    <statement name="STATEMENTS">
+      <block type="s4d_send_channel" id="MIlt,Pj3Lr6dPcQH]PpB">
+        <value name="CONTENT">
+          <block type="text_join" id="^+}phTpQ_tGrG6y,@*Bt">
+            <mutation items="3"></mutation>
+            <value name="ADD0">
+              <block type="text" id="6hS;=@ZEyPC;y+spY|4-">
+                <field name="TEXT">The user </field>
+              </block>
+            </value>
+            <value name="ADD1">
+              <block type="s4d_leaving_guild" id="k.|wjF1cu[{|tXwiy%Y9"></block>
+            </value>
+            <value name="ADD2">
+              <block type="text" id=",)3cUG:2Ub5#vL=rW1$O">
+                <field name="TEXT"> left :.(</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <value name="CHANNEL">
+          <block type="s4d_get_channel" id="+2Mosi-j}Um.^tfNxJmR">
+            <field name="SEARCH_TYPE">NAME</field>
+            <value name="VALUE">
+              <block type="text" id="J?55KG_,dpX5kwY:Bf*p">
+                <field name="TEXT">welcome</field>
+              </block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+</xml>
